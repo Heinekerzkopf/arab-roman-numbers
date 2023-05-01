@@ -1,0 +1,124 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+//===========================================================================================================================//
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #495057;
+  background: linear-gradient(#141e30, #243b55);
+  overflow: hidden;
+
+
+  &.lock {
+    overflow: auto;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+[class*="__container"] {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+//========================================================================================================================================================
+.wrapper {
+  margin: 75px;
+
+  &__container {
+    background-color: #fff;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.numbers {
+
+  &__title-big {
+    font-size: 32px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    line-height: 46px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 350px;
+  }
+
+  &__column {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 24px;
+  }
+
+  &__items-one {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__items {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__content {
+    p:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+  }
+}
+.item {
+
+  &__input {
+    padding: 15px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    transition: all 0.3s ease 0s;
+    &:focus {
+      box-shadow: 0px 0px 3px 0px #666;
+    }
+  }
+
+  &__btn {
+    padding: 8px 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    border: 1px solid black;
+    align-self: start;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      background-color: #a7a7a7;
+      color: #fff;
+    }
+  }
+
+  &__out {
+    color: red;
+  }
+}
